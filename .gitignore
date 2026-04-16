@@ -1,0 +1,39 @@
+# --- 编译器和构建系统 (CMake/MSVC) ---
+build/
+out/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.lib
+*.exp
+
+# --- Visual Studio 特有文件 ---
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.db
+*.opendb
+
+# --- CMake 缓存与中间件 ---
+CMakeCache.txt
+CMakeFiles/
+CMakeSettings.json
+cmake_install.cmake
+Makefile
+install/
+
+# --- 资源文件夹 (如果你的 build 文件夹里有自动生成的 shaders，确保不被删除) ---
+# 但通常建议源码目录下的 shaders 需要同步，build 下的只是拷贝
+# 如果你有特殊的 data/ 目录是运行生成的，也加在这里
+
+# --- 临时文件与系统文件 ---
+.DS_Store
+*.log
+*.tmp
+*.bak
